@@ -12,7 +12,8 @@
 </head>
 
 <body>
-<img align-left src="/images/quality1.png" alt="Quality Lettering and Graphics">
+
+<img align-left padding-top: 2em src="/images/quality1.png" alt="Quality Lettering and Graphics">
 <h2>Your Local Source for Signs</h2>
 
 
@@ -38,26 +39,29 @@
           <div class="row">
           <div class="col-xs-12 col-md-4">
             <ul class="nav navbar-nav navbar-left">
-              <li><%= link_to 'Quality Lettering', root_path %></li>
+              <li style="font-size:1.3em"><%= link_to 'Quality Lettering', root_path %></li>
             </ul> 
           </div>
           <div class="col-xs-12 col-md-8">
             <ul class="nav navbar-nav navbar-right">
-              <li>
-                <%= form_tag("/products", method: "get") do %>
-                  <%= label_tag(:q, "Search for:") %>
-                  <%= text_field_tag(:q) %>
-                  <%= submit_tag("Search") %>
-                <% end %>
-              </li>
-              <li><%= link_to 'About', static_pages_about_path %></li>
-              <li><%= link_to 'Products', products_path %></li>
-              <li><%= link_to 'Contact', static_pages_contact_path %></li>
+
+              <li style="font-size:1.2em"><%= link_to 'About', static_pages_about_path %></li>
+              <li style="font-size:1.2em"><%= link_to 'Products', products_path %></li>
+              <li style="font-size:1.2em"><%= link_to 'Contact', static_pages_contact_path %></li>
             </ul> 
           </div>
       </div> 
       </div>
-      </div>  
+      </div> 
+        <ul>
+                    <li style="margin-left: 60%">
+                <%= form_tag("/products", method: "get") do %>
+                  <%= label_tag(:q, "Search for:") %>
+                  <%= text_field_tag(:q) %>
+                  <%= submit_tag("Product Search") %>
+                <% end %>
+              </li> 
+              </ul>
     </nav> <!-- End Nav -->
 
 
